@@ -39,7 +39,7 @@ const projects = [
     title: 'Tic Tac Toe',
     tech: ['HTML', 'CSS', 'JavaScript'],
     image: '/tic tac toe.png',
-    live: '#',
+    live: 'https://tictactoesimran.netlify.app',
     github: '#',
   },
   {
@@ -48,14 +48,14 @@ const projects = [
     tech: ['React', 'CSS'],
     image: '/expense tracker.png',
     live: '#',
-    github: '#',
+    github: 'https://js-expense-webapp.netlify.app',
   },
   {
     featured: false,
     title: 'Weather App',
     tech: ['HTML', 'CSS', 'JavaScript', 'Weather API'],
     image: '/weather.png',
-    live: '#',
+    live: 'http://weather-tracker-js.netlify.app',
     github: '#',
   },
   {
@@ -63,7 +63,7 @@ const projects = [
     title: 'Currency Converter',
     tech: ['HTML', 'CSS', 'JavaScript', 'Exchange Rate API'],
     image: '/currency converter.png',
-    live: '#',
+    live: 'https://currency-exchanger-js.netlify.app',
     github: '#',
   },
   {
@@ -71,7 +71,7 @@ const projects = [
     title: 'Todo App',
     tech: ['React', 'Local Storage'],
     image: '/todo.png',
-    live: '#',
+    live: 'https://focus-board-js.netlify.app',
     github: '#',
   },
 ];
