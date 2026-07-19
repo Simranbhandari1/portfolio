@@ -4,7 +4,7 @@ A modern and fully responsive developer portfolio built with **Next.js**, **Tail
 
 ## 🚀 Live Demo
 
-🔗 https://your-portfolio-link.vercel.app
+🔗 https://portfolio-theta-bice-28.vercel.app/
 
 ---
 
