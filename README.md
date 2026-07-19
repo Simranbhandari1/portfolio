@@ -127,8 +127,8 @@ http://localhost:3000
 ## 🤝 Connect With Me
 
 - GitHub: https://github.com/Simranbhandari1
-- LinkedIn: https://linkedin.com/in/your-linkedin
-- Email: your@email.com
+- LinkedIn: https://linkedin.com/in/simran-bhandari
+- Email: simran.bhandari.486@email.com
 
 ---
 
