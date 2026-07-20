@@ -41,15 +41,15 @@ const projects = [
     tech: ['HTML', 'CSS', 'JavaScript'],
     image: '/tic tac toe.png',
     live: 'https://tictactoesimran.netlify.app',
-    github: '#',
+    github: 'https://github.com/Simranbhandari1/Tic-Tac-Toe',
   },
   {
     featured: false,
     title: 'Expense Tracker',
     tech: ['React', 'CSS'],
     image: '/expense tracker.png',
-    live: '#',
-    github: 'https://js-expense-webapp.netlify.app',
+    live: 'https://js-expense-webapp.netlify.app/',
+    github: 'https://github.com/Simranbhandari1/Expense-Tracker',
   },
   {
     featured: false,
@@ -57,7 +57,7 @@ const projects = [
     tech: ['HTML', 'CSS', 'JavaScript', 'Weather API'],
     image: '/weather.png',
     live: 'http://weather-tracker-js.netlify.app',
-    github: '#',
+    github: 'https://github.com/Simranbhandari1/weather-tracker',
   },
   {
     featured: false,
@@ -65,7 +65,7 @@ const projects = [
     tech: ['HTML', 'CSS', 'JavaScript', 'Exchange Rate API'],
     image: '/currency converter.png',
     live: 'https://currency-exchanger-js.netlify.app',
-    github: '#',
+    github: 'https://github.com/Simranbhandari1/currency-converter',
   },
   {
     featured: false,
@@ -73,7 +73,7 @@ const projects = [
     tech: ['React', 'Local Storage'],
     image: '/todo.png',
     live: 'https://focus-board-js.netlify.app',
-    github: '#',
+    github: 'https://github.com/Simranbhandari1/task-manager',
   },
 ];
 

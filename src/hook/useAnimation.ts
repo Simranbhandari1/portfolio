@@ -10,6 +10,7 @@ import { projectsAnimation } from '../animation/projectAnimation';
 import { experienceAnimation } from '../animation/experienceAnimation';
 import { achievementsAnimation } from '../animation/Achievements';
 import { contactAnimation } from '../animation/contactAnimation';
+import { footerAnimation } from '../animation/footerAnimation';
 
 export const useNavbarAnimation = () => {
   useGSAP(() => {
@@ -56,5 +57,10 @@ export const useAchievementsAnimation = () => {
 export const useContactAnimation = () => {
   useGSAP(() => {
     contactAnimation();
+  });
+};
+export const useFooterAnimation = () => {
+  useGSAP(() => {
+    footerAnimation();
   });
 };
