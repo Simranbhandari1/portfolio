@@ -104,7 +104,7 @@ export default function Contact() {
             </a>
 
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://linkedin.com/in/simran-bhandari"
               target="_blank"
               rel="noopener noreferrer"
               className="  flex items-center gap-3 rounded-xl border border-gray-800 px-6 py-4 transition-all duration-300 hover:border-sky-500 hover:bg-sky-500/5"
@@ -115,7 +115,7 @@ export default function Contact() {
             </a>
 
             <a
-              href="/resume.pdf"
+              href="/Resume.pdf"
               download
               className=" rounded-xl bg-sky-500 px-8 py-4 font-semibold transition-all duration-300 hover:-translate-y-1 hover:bg-sky-400"
             >

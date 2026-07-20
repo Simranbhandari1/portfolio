@@ -39,11 +39,13 @@ export default function Hero() {
           {/* Buttons */}
           <div className="hero-bottom mt-10 flex flex-wrap justify-center gap-5 lg:justify-start">
             <button className="rounded-xl bg-sky-500 px-7 py-4 font-semibold text-white transition duration-300 hover:-translate-y-1 hover:bg-sky-400">
-              Explore Projects
+              <a href="#projects">Explore Projects</a>
             </button>
 
             <button className=" rounded-xl border border-gray-700 px-7 py-4 font-semibold transition duration-300 hover:border-sky-500 hover:bg-sky-500/10">
-              Resume ↓
+              <a download href="/resume.pdf">
+                Resume ↓
+              </a>
             </button>
           </div>
 

@@ -29,7 +29,7 @@ const skills = [
   {
     title: 'Other',
     icon: <Layers3 className="h-6 w-6 text-sky-400" />,
-    technologies: ['Cloudinary', 'Gemini AI', 'React Native', 'Expo'],
+    technologies: ['Cloudinary', 'Gemini AI'],
   },
 ];
 
