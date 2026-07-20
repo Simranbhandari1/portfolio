@@ -1,3 +1,4 @@
+'use client';
 import {
   Trophy,
   Medal,
@@ -6,7 +7,7 @@ import {
   GraduationCap,
   Code,
 } from 'lucide-react';
-
+import { useAchievementsAnimation } from '../hook/useAnimation';
 const achievements = [
   {
     icon: Trophy,
@@ -59,19 +60,27 @@ const achievements = [
 ];
 
 export default function Achievements() {
+  useAchievementsAnimation();
   return (
-    <section id="achievements" className="bg-[#030712] py-24 text-white">
+    <section
+      id="achievements"
+      className="achievements-section bg-[#030712] py-24 text-white"
+    >
       <div className="mx-auto max-w-7xl px-6">
-        <p className="font-medium text-sky-400">Achievements</p>
+        <p className="achievements-heading font-medium text-sky-400">
+          Achievements
+        </p>
 
-        <h2 className="mt-3 text-5xl font-bold">Awards & Certifications</h2>
+        <h2 className="achievements-heading mt-3 text-5xl font-bold">
+          Awards & Certifications
+        </h2>
 
-        <p className="mt-4 max-w-2xl text-gray-400">
+        <p className="achievements-description mt-4 max-w-2xl text-gray-400">
           A few milestones that reflect my learning journey, competitive spirit
           and continuous growth as a developer.
         </p>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="achievement-card mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {achievements.map((item) => {
             const Icon = item.icon;
 
@@ -80,13 +89,15 @@ export default function Achievements() {
                 key={item.title}
                 className="rounded-2xl border border-gray-800 bg-[#111827] p-6 transition-all duration-300 hover:-translate-y-2 hover:border-sky-500/60"
               >
-                <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-sky-500/10">
+                <div className="achievement-icon  flex h-14 w-14 items-center justify-center rounded-xl bg-sky-500/10">
                   <Icon className="h-7 w-7 text-sky-400" />
                 </div>
 
-                <h3 className="mt-6 text-xl font-semibold">{item.title}</h3>
+                <h3 className="achievement-title mt-6 text-xl font-semibold">
+                  {item.title}
+                </h3>
 
-                <p className="mt-3 text-sm leading-7 text-gray-400">
+                <p className="achievement-text mt-3 text-sm leading-7 text-gray-400">
                   {item.description}
                 </p>
               </div>

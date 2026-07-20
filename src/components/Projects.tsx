@@ -1,7 +1,8 @@
+'use client';
 import Image from 'next/image';
 import { ExternalLink } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
-
+import { useProjectsAnimation } from '../hook/useAnimation';
 const projects = [
   {
     featured: true,
@@ -77,19 +78,27 @@ const projects = [
 ];
 
 export default function Projects() {
+  useProjectsAnimation();
   return (
-    <section id="projects" className="bg-[#030712] py-24 text-white">
+    <section
+      id="projects"
+      className="projects-section bg-[#030712] py-24 text-white"
+    >
       <div className="mx-auto max-w-7xl px-6">
-        <p className="font-medium text-sky-400">Featured Projects</p>
+        <p className="projects-heading font-medium text-sky-400">
+          Featured Projects
+        </p>
 
-        <h2 className="mt-3 text-5xl font-bold">Things I've Built</h2>
+        <h2 className="projects-heading mt-3 text-5xl font-bold">
+          Things I've Built
+        </h2>
 
-        <p className="mt-4 max-w-2xl text-gray-400">
+        <p className="projects-description mt-4 max-w-2xl text-gray-400">
           Full-stack applications built with modern technologies, focusing on
           performance and user experience.
         </p>
 
-        <div className="mt-14 grid gap-8 md:grid-cols-2">
+        <div className="project-card mt-14 grid gap-8 md:grid-cols-2">
           {projects.map((project) => (
             <div
               key={project.title}
@@ -97,7 +106,7 @@ export default function Projects() {
             >
               {/* Project Image */}
 
-              <div className="relative h-48 overflow-hidden">
+              <div className="project-image relative h-48 overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -109,15 +118,17 @@ export default function Projects() {
               {/* Content */}
 
               <div className="p-5">
-                <h3 className="text-xl font-bold">{project.title}</h3>
+                <h3 className="project-title text-xl font-bold">
+                  {project.title}
+                </h3>
 
-                <p className="mt-3 text-sm leading-6 text-gray-400">
+                <p className="project-description mt-3 text-sm leading-6 text-gray-400">
                   {project.description}
                 </p>
 
                 {/* Tech Stack */}
 
-                <div className="mt-5 flex flex-wrap gap-2">
+                <div className="project-tech mt-5 flex flex-wrap gap-2">
                   {project.tech.map((item) => (
                     <span
                       key={item}
@@ -130,7 +141,7 @@ export default function Projects() {
 
                 {/* Buttons */}
 
-                <div className="mt-6 flex items-center justify-between border-t border-gray-800 pt-4">
+                <div className="project-buttons mt-6 flex items-center justify-between border-t border-gray-800 pt-4">
                   <a
                     href={project.live}
                     target="_blank"
